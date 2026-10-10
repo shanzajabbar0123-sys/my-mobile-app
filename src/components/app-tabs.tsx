@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from 'expo-router'
+import { Tabs } from 'expo-router';
 
 export default function AppTabs() {
   return (
@@ -20,19 +20,19 @@ export default function AppTabs() {
         }}
       />
 
-      {/* 3. Characters Tab */}
+      {/* 3. Menu Tab */}
       <Tabs.Screen
-        name="characters"
+        name="menu"
         options={{
-          title: 'Characters',
+          title: 'Menu',
         }}
       />
 
-      {/* 3. Naya Tab (Assignment 2 Requirement) */}
+      {/* 4. Profile Tab */}
       <Tabs.Screen
-        name="four"
+        name="profile"
         options={{
-          title: 'Screen 4',
+          title: 'Profile',
         }}
       />
     </Tabs>

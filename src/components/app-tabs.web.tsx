@@ -17,19 +17,24 @@ import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 
 export default function AppTabs() {
   return (
-    <Tabs>
+  <Tabs>
       <TabSlot style={{ height: '100%' }} />
-      <TabList asChild>
-        <CustomTabList>
-          <TabTrigger name="home" href="/" asChild>
-            <TabButton>Home</TabButton>
-          </TabTrigger>
-          <TabTrigger name="explore" href="/explore" asChild>
-            <TabButton>Explore</TabButton>
-          </TabTrigger>
-        </CustomTabList>
-      </TabList>
+      <CustomTabList>
+        <TabTrigger name="home" href="/" asChild>
+          <TabButton.Home />
+        </TabTrigger>
+        
+        <TabTrigger name="explore" href="/explore" asChild>
+          <TabButton.Explore />
+        </TabTrigger>
+
+        {/* Naya Characters Tab Jo Hum Ne Add Kiya */}
+        <TabTrigger name="characters" href="/characters" asChild>
+          <TabButton.Explore /> 
+        </TabTrigger>
+      </CustomTabList>
     </Tabs>
+    
   );
 }
 
